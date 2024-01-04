@@ -1,0 +1,14 @@
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group mb-3">
+        <label class="text-white" for="nom">Nom</label>
+        <input type="text" class="form-control" id="nom" [(ngModel)]="nom" name="nom" required>
+    </div>
+    <div class="form-group mb-3">
+        <label class="text-white" for="prix">Prix</label>
+        <input type="text" class="form-control" id="prix" [(ngModel)]="prix" name="prix" required>
+    </div>
+    <div class="d-grid">
+        <button type="submit" class="btn btn-primary btn-block" [disabled]="!isValidForm()">Soumettre</button>
+    </div>
+    <p class="text-white" id="erreur"></p>
+</form>
