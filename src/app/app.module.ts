@@ -13,6 +13,8 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { PageGrapheCirculaireComponent } from './pages/page-graphe-circulaire/page-graphe-circulaire.component';
 import { PageAccueilComponent } from './pages/page-accueil/page-accueil.component';
 import { BarChartComponent } from './visualisations/bar-chart/bar-chart.component';
+import { PieChartComponent } from './visualisations/pie-chart/pie-chart.component';
+import { NetworkGraphComponent } from './visualisations/network-graph/network-graph.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyB7hhJE9E6ck3NWKkg2NklHYCI8mcBnQ-0",
@@ -32,7 +34,9 @@ const firebaseConfig = {
     NavigationBarComponent,
     PageGrapheCirculaireComponent,
     PageAccueilComponent,
-    BarChartComponent
+    BarChartComponent,
+    PieChartComponent,
+    NetworkGraphComponent
   ],
   imports: [
     BrowserModule,
