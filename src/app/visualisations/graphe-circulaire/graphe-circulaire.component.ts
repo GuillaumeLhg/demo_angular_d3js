@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FirestoreService } from '../services/firestore.service';
+import { FirestoreService } from '../../services/firestore.service';
 import * as d3 from 'd3';
 import legend from 'd3-svg-legend';
-import { Depense } from '../modeles/depense';
+import { Depense } from '../../modeles/depense';
 import { onSnapshot } from '@angular/fire/firestore';
 
 @Component({
