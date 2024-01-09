@@ -25,3 +25,28 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Packages to add
+### Installation of D3.js
+npm install d3
+npm install @types/d3
+
+### Installation of Angular fire
+npm i @angular/fire
+
+### Installation of d3-legend
+npm i d3-svg-legend
+
+### Installation of topojson
+npm i topojson
+npm i @types/topojson
+
+### Installation of d3-queue
+npm i d3-queue
+npm i @types/d3-queue
+
+### Examples
+https://observablehq.com/@d3/gallery
+https://www.jasondavies.com/maps/zoom/
+https://www.jasondavies.com/maps/rotate/
+https://gist.github.com/mbostock/4090846

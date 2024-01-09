@@ -5,6 +5,7 @@ import { PageAccueilComponent } from './pages/page-accueil/page-accueil.componen
 import { BarChartComponent } from './visualisations/bar-chart/bar-chart.component';
 import { PieChartComponent } from './visualisations/pie-chart/pie-chart.component';
 import { NetworkGraphComponent } from './visualisations/network-graph/network-graph.component';
+import { WorldTourComponent } from './visualisations/world-tour/world-tour.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/accueil', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'bar-chart', component: BarChartComponent },
   { path: 'pie-chart', component: PieChartComponent },
   { path: 'network-graph', component: NetworkGraphComponent },
+  { path: 'world-tour', component: WorldTourComponent },
 ];
 
 @NgModule({

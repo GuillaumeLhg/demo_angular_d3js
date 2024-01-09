@@ -15,6 +15,7 @@ import { PageAccueilComponent } from './pages/page-accueil/page-accueil.componen
 import { BarChartComponent } from './visualisations/bar-chart/bar-chart.component';
 import { PieChartComponent } from './visualisations/pie-chart/pie-chart.component';
 import { NetworkGraphComponent } from './visualisations/network-graph/network-graph.component';
+import { WorldTourComponent } from './visualisations/world-tour/world-tour.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyB7hhJE9E6ck3NWKkg2NklHYCI8mcBnQ-0",
@@ -36,7 +37,8 @@ const firebaseConfig = {
     PageAccueilComponent,
     BarChartComponent,
     PieChartComponent,
-    NetworkGraphComponent
+    NetworkGraphComponent,
+    WorldTourComponent
   ],
   imports: [
     BrowserModule,
