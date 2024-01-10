@@ -34,7 +34,7 @@ export class NetworkGraphComponent implements OnInit {
 
     let link: d3.Selection<SVGPathElement, any, SVGGElement, unknown>, node: d3.Selection<SVGTextElement, d3.HierarchyNode<any>, SVGGElement, unknown>;
 
-    d3.json<any>('assets/data/serviceNet.json').then((classes) => {
+    d3.json<any>('assets/data/network-graph/serviceNet.json').then((classes) => {
       const root = packageHierarchy(classes)
         .sum((d) => d.size);
 

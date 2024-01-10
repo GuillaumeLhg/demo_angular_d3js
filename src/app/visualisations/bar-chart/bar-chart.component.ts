@@ -9,16 +9,16 @@ import * as d3 from 'd3';
 export class BarChartComponent implements OnInit {
 
   private data = [
-    { "Framework": "Vue", "Stars": "166443", "Released": "2014" },
-    { "Framework": "React", "Stars": "150793", "Released": "2013" },
-    { "Framework": "Angular", "Stars": "62342", "Released": "2016" },
-    { "Framework": "Backbone", "Stars": "27647", "Released": "2010" },
-    { "Framework": "Ember", "Stars": "21471", "Released": "2011" },
+    { "Film": "Orange mécanique", "Stars": "7602396", "Released": "1971" },
+    { "Film": "Spartacus", "Stars": "3525328", "Released": "1951" },
+    { "Film": "Barry Lindon", "Stars": "3475185", "Released": "1975" },
+    { "Film": "2001, l'Odyssée de l'espace", "Stars": "3256084", "Released": "1968" },
+    { "Film": "Shining", "Stars": "2359705", "Released": "1980" },
   ];
   private svg: any;
-  private margin = 50;
-  private width = 750 - (this.margin * 2);
-  private height = 400 - (this.margin * 2);
+  private margin = 120;
+  private width = 1000 - (this.margin * 2);
+  private height = 700 - (this.margin * 2);
 
   ngOnInit(): void {
     this.createSvg();
@@ -38,7 +38,7 @@ export class BarChartComponent implements OnInit {
     // Create the X-axis band scale
     const x = d3.scaleBand()
       .range([0, this.width])
-      .domain(data.map(d => d.Framework))
+      .domain(data.map(d => d.Film))
       .padding(0.2);
 
     // Draw the X-axis on the DOM
@@ -53,7 +53,7 @@ export class BarChartComponent implements OnInit {
 
     // Create the Y-axis band scale
     const y = d3.scaleLinear()
-      .domain([0, 200000])
+      .domain([0, 8000000])
       .range([this.height, 0]);
 
     // Draw the Y-axis on the DOM
@@ -66,7 +66,7 @@ export class BarChartComponent implements OnInit {
       .data(data)
       .enter()
       .append("rect")
-      .attr("x", (d: any) => x(d.Framework))
+      .attr("x", (d: any) => x(d.Film))
       .attr("y", (d: any) => y(d.Stars))
       .attr("width", x.bandwidth())
       .attr("height", (d: any) => this.height - y(d.Stars))

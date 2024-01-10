@@ -60,22 +60,22 @@
 
 
 .red {
+    width: 40px;
+    height: 10px;
     background-color: red;
-    width: 20px;
 }
 
 .green {
+    width: 40px;
+    height: 10px;
     background-color: green;
-    width: 20px;
+}
+
+#red, #green {
+    display: flex;
+    align-items: center;
 }
 
 #network-and-legend {
     display: flex;
-}
-
-#legend_network {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
 }

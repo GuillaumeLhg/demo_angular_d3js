@@ -8,11 +8,11 @@ import * as d3 from 'd3';
 })
 export class PieChartComponent implements OnInit {
   private data = [
-    { "Framework": "Vue", "Stars": "166443", "Released": "2014" },
-    { "Framework": "React", "Stars": "150793", "Released": "2013" },
-    { "Framework": "Angular", "Stars": "62342", "Released": "2016" },
-    { "Framework": "Backbone", "Stars": "27647", "Released": "2010" },
-    { "Framework": "Ember", "Stars": "21471", "Released": "2011" },
+    { "Film": "Orange mécanique", "Stars": "7602396", "Released": "1971" },
+    { "Film": "Spartacus", "Stars": "3525328", "Released": "1951" },
+    { "Film": "Barry Lindon", "Stars": "3475185", "Released": "1975" },
+    { "Film": "2001, l'Odyssée de l'espace", "Stars": "3256084", "Released": "1968" },
+    { "Film": "Shining", "Stars": "2359705", "Released": "1980" },
   ];
   private svg: any;
   private margin = 50;
@@ -74,7 +74,7 @@ export class PieChartComponent implements OnInit {
       .data(pie(this.data))
       .enter()
       .append('text')
-      .text((d: any) => d.data.Framework)
+      .text((d: any) => d.data.Film)
       .attr("transform", (d: any) => "translate(" + labelLocation.centroid(d) + ")")
       .style("text-anchor", "middle")
       .style("font-size", 15);
